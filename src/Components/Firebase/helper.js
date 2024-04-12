@@ -1,18 +1,17 @@
 import {
-  signInWithPopup,
   GoogleAuthProvider,
+  signInWithPopup,
   GithubAuthProvider,
   FacebookAuthProvider,
 } from "firebase/auth";
-import { auth, db } from "./firebase.config";
+// import { auth } from "./firebase.config";
 import { doc, getDoc } from "firebase/firestore";
+// import { db } from "./firebase.config";
 
-// Create Firebase auth providers
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
 
-// Function to handle sign-in or login with Google
 export const SignInOrLoginwithGoogle = async (
   context,
   navigate,
@@ -37,16 +36,10 @@ export const SignInOrLoginwithGoogle = async (
     setLoader(true);
     navigate("/", { replace: true });
   } catch (error) {
-    if (error.code === "auth/invalid-api-key") {
-      // Ignore this specific error
-      console.error("Ignoring auth/invalid-api-key error:", error.message);
-    } else {
-      console.error("Error creating user account:", error.message);
-    }
+    console.error("Error creating user account:", error.message);
   }
 };
 
-// Function to handle sign-in or login with GitHub
 export const SignInOrLoginwithGitHub = async (
   context,
   navigate,
@@ -72,16 +65,10 @@ export const SignInOrLoginwithGitHub = async (
     setLoader(true);
     navigate("/", { replace: true });
   } catch (error) {
-    if (error.code === "auth/invalid-api-key") {
-      // Ignore this specific error
-      console.error("Ignoring auth/invalid-api-key error:", error.message);
-    } else {
-      console.error("Error creating user account:", error.message);
-    }
+    console.error("Error creating user account:", error.message);
   }
 };
 
-// Function to handle sign-in or login with Facebook
 export const SignInOrLoginwithFacebook = async (
   context,
   navigate,
@@ -107,11 +94,6 @@ export const SignInOrLoginwithFacebook = async (
     setLoader(true);
     navigate("/", { replace: true });
   } catch (error) {
-    if (error.code === "auth/invalid-api-key") {
-      // Ignore this specific error
-      console.error("Ignoring auth/invalid-api-key error:", error.message);
-    } else {
-      console.error("Error creating user account:", error.message);
-    }
+    console.error("Error creating user account:", error.message);
   }
 };

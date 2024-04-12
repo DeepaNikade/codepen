@@ -8,7 +8,7 @@ import { TiTick } from "react-icons/ti";
 import UserContext from "../../Context/Context";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { signOut } from "firebase/auth";
-import { auth, db } from "../Firebase/firebase.config";
+// import { auth, db } from "../Firebase/firebase.config";
 import { doc, setDoc } from "firebase/firestore";
 const Editor = () => {
   const [html, setHtml] = useState("");

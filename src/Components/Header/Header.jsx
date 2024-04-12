@@ -4,7 +4,7 @@ import "./Header.css"
 import { useContext, useState } from "react";
 import UserContext from "../../Context/Context"
 import {  signOut } from "firebase/auth";
-import { auth } from "../Firebase/firebase.config";
+// import { auth } from "../Firebase/firebase.config";
 import { useNavigate } from "react-router-dom";
 const Header = () => {
     const [dropdown , setDropDown] = useState(false)

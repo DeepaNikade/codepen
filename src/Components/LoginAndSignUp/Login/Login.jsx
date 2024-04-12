@@ -6,11 +6,11 @@ import {
   SignInOrLoginwithFacebook
 } from "../../Firebase/helper";
 import { useContext, useState } from "react";
-import { auth } from "../../Firebase/firebase.config";
+// import { auth } from "../../Firebase/firebase.config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import UserContext from "../../../Context/Context";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../../Firebase/firebase.config"
+// import { db } from "../../Firebase/firebase.config"
 
 const Login = () => {
   const [email, setEmail] = useState("");
