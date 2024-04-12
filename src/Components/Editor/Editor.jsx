@@ -48,7 +48,7 @@ const Editor = () => {
     setJs("");
     setOutput("");
     setEdit("Untitled");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, [penData]);
 
   let handleSave = async () => {
@@ -102,7 +102,7 @@ const Editor = () => {
 
   useEffect(() => {
     updateCode();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   }, [html, css, js]);
 
   return (

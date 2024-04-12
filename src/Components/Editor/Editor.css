@@ -213,12 +213,6 @@
 
 
 
-
-
-
-
-
-
 .pen  .editor-output{
     display: flex;
     flex-direction: column;
@@ -271,9 +265,7 @@
     background-color: rgb(29,30,34);
     width: 100%;
     height: calc(100% - 42px);
-    /* ::-webkit-scrollbar{
-        display: none;
-    } */
+  
 }
 
 
@@ -295,21 +287,7 @@
 
 
 
-/* .CodeMirror {
-    height: 340px !important;
-    color: #fff;
-    z-index: 100;
-  } */
-  /* .CodeMirror-gutters {
-    background: #1d1e22 !important;
-  }
-  .CodeMirror-scroll {
-    background: #1d1e22;
-  }
-  
-  .CodeMirror {
-    padding-top: 0 !important;
-  } */
+
   
   .CodeMirror-wrap pre {
     word-break: break-word;

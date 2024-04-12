@@ -3,7 +3,7 @@ import UserContext from './Context'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// eslint-disable-next-line react/prop-types
+
 const Userprovidercontext = ({ children }) => {
     const [isLoggedIn , setIsLoggedIn] = useState(false)
     const [loader , setLoader] = useState(true);
