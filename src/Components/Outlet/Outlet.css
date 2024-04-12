@@ -1,0 +1,33 @@
+.main-container{
+    display: flex;
+}
+
+
+
+
+.main-container .header-outlet{
+    width: calc(100% - 180px);
+    margin-left: 180px;
+    padding-left: 30px;
+    background-color: hsl(225deg 9.52% 8.24%);
+    color: white;
+    min-height: 100vh;
+    transition: all 0.2s linear;
+}
+
+@media (max-width : 830px) {
+    .main-container .sideBarBox{
+        display: none;
+    }
+
+    .main-container .header-outlet{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .main-container .header-outlet .outlet{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,140 @@
+.signupbox{
+    margin: 1.5rem auto 1.25rem;
+    width: 520px;
+    border-radius: 10px;
+}
+
+.signupbox .signup-header{
+    /* background-color: hsl(228deg 12.2% 40.2%); */
+    color: white;
+    text-align: center;
+    padding: 60px 0 30px;
+   
+}
+
+.signupbox .signup-header h1{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.signupbox .signup-header p{
+    margin-bottom: 15px;
+}
+
+.signupbox .links-form{
+    padding: 1.25rem;
+    background-color: white;
+}
+
+/* .signup .links-form .links{
+
+} */
+
+.signupbox .links-form .links button{
+    display: flex;
+    align-items: center;
+    padding: 0.4rem  0.8rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+    background-color: hsl(227.37deg 12.26% 30.39%);
+    color: hsl(0deg 0% 100%);
+    border-radius: 4px ;
+    cursor: pointer;
+    border: 3px solid transparent;
+    width: 100%;
+}
+
+.signupbox .links-form .links button:hover{
+    background-color: black;
+    border: 3px solid hsl( 227.37deg 12.26% 30.39% );
+    
+}
+.signupbox .links-form .links button svg{
+    margin-right: 1.2rem;
+}
+
+.signupbox .links-form .links button p{
+    font-size: 1rem;
+}
+
+.signupbox .links-form .or{
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.signupbox .links-form  .form{
+    margin-top: 1rem;
+}
+
+.signupbox .links-form  .form .signupbutton{
+    padding: 10px 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: hsl( 227.37deg 12.26% 30.39% );
+    margin-bottom: 1rem;
+}
+
+.signupbox .links-form  .form .signupbutton:hover{
+    background-color: hsl( 228deg 12.2% 40.2% );
+}
+
+.signupbox .links-form  .form form{
+    display: none;
+}
+
+.signupbox .links-form  .form form .commons{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.signupbox .links-form  .form form .commons label{
+    font-weight: 400;
+    display: block;
+    margin: 0 0 3px;
+    letter-spacing: .5px;
+    color: black;
+    
+}
+
+.signupbox .links-form  .form form .commons input{
+    font-size: 1.3rem;
+    background-color:hsl( 226.67deg 12% 85.29% );
+    border: 3px solid hsl( 226.67deg 12% 85.29% );
+    padding: 0.6rem;
+    border-radius: 4px;
+    color: black;
+}
+
+.signupbox .links-form  .form form .commons input:focus{
+    outline: none;
+    border: 3px solid hsl( 227.37deg 12.26% 30.39% );
+    background-color: white;
+}
+
+.signupbox .links-form  .form form  button{
+    padding: 0.6rem 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    font-weight: 400;
+    background-color: hsl(139.41deg 58.62% 54.51%);
+    color: black;
+    cursor: pointer;
+    margin: 1px 10px 1px 0px;
+}
+
+.signupbox .links-form  .form form button:hover{
+    background-color: hsl(139.62deg 59.09% 34.51%);
+    color: white;
+}
+
+@media (max-width : 830px) {
+    .signupbox{
+        width: 100%;
+    }
+}

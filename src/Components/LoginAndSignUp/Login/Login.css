@@ -1,0 +1,161 @@
+.loginbox  .login{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+.loginbox{
+    display: flex;
+    flex-direction: column;
+}
+.loginbox  .login .login-header{
+    margin: 50px 0 20px;
+}
+
+.loginbox  .login .login-header .logo{
+    width: 220px;
+    height: 31px;
+    opacity: 0.4;
+    margin: 0 0 0 -6px;
+}
+
+.loginbox  .login .login-header .logo img{
+    width: 176px;
+    height: 100%;
+}
+
+.loginbox  .login .login-header p{
+    font-size: 4.7rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.loginbox  .login .login-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.loginbox  .login .login-section .login-accounts-list button{
+    display: flex;
+    align-items: center;
+    padding: 0.4rem  0.8rem;
+    margin-bottom: 0.6rem;
+    /* text-align: left; */
+    background-color: hsl(227.37deg 12.26% 30.39%);
+    color: hsl(0deg 0% 100%);
+    border-radius: 4px ;
+    cursor: pointer;
+    border: 3px solid transparent;
+    width: 280px;
+}
+
+.loginbox  .login .login-section .login-accounts-list button:hover{
+    background-color: black;
+    border: 3px solid hsl( 227.37deg 12.26% 30.39% );
+    
+}
+.loginbox  .login .login-section .login-accounts-list button svg{
+    margin-right: 1.2rem;
+}
+
+.loginbox  .login .login-section .login-accounts-list button p{
+   
+    font-size: 1rem;
+}
+
+.loginbox  .login .login-section .form{
+    width: 100%;
+    /* padding-left: 10% ; */
+}
+
+.loginbox  .login .login-section .form .common{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.loginbox  .login .login-section .form .common label{
+    font-weight: 400;
+    display: block;
+    margin: 0 0 3px;
+    letter-spacing: .5px;
+    
+}
+
+.loginbox  .login .login-section .form .common input{
+    font-size: 1.3rem;
+    background-color:hsl( 226.67deg 12% 85.29% );
+    border: 3px solid hsl( 226.67deg 12% 85.29% );
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
+.loginbox  .login .login-section .form .common input:focus{
+    outline: none;
+    border: 3px solid hsl( 227.37deg 12.26% 30.39% );
+    background-color: white;
+}
+
+.loginbox  .login .login-section .form button{
+    padding: 0.6rem 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    font-weight: 400;
+    background-color: hsl(139.41deg 58.62% 54.51%);
+    color: black;
+    cursor: pointer;
+    margin: 1px 10px 1px 0px;
+}
+
+.loginbox  .login .login-section .form button:hover{
+    background-color: hsl(139.62deg 59.09% 34.51%);
+    color: white;
+}
+
+.loginbox  .login .needAccount{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+
+.loginbox  .login .needAccount a{
+    text-decoration: none;
+    color: hsl( 196.2deg 100% 73.14% );
+    cursor: pointer;
+}
+
+.loginbox  .login .needAccount a:hover{
+    color: white;
+}
+
+
+@media (max-width : 830px) {
+    .loginbox  .login{
+        width: 100%;
+    }
+
+    .loginbox  .login .login-section .login-accounts-list button{
+        width: 100%;
+    }
+}
+
+@media (max-width : 590px) {
+    .loginbox  .login .login-section{
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .loginbox  .login .login-accounts-list{
+        width: 100%;
+    }
+
+    .loginbox  .login .login-section .form{
+        width: 100%;
+        padding-left: 0;
+    }
+}

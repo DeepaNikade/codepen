@@ -1,0 +1,418 @@
+.pen{
+    background-color: #131417;
+}
+
+.pen .penHeader{
+    height: 65px;
+    border-bottom: 1px solid #444857;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0.5rem 0.5rem;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.pen .penHeader .logo-title-section{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: end;
+}
+
+.pen .penHeader .logo-title-section .logo svg{
+    height: 35px;
+}
+
+.pen .penHeader .logo-title-section .title-username{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.1rem;
+}
+
+.pen .penHeader .logo-title-section .title-username .titlesection{
+    display: flex;
+    color: white;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.pen .penHeader .logo-title-section .title-username .titlesection .title p{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.pen .penHeader .logo-title-section .title-username .titlesection .title input{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    outline: none;
+    width: 200px;
+}
+
+.pen .penHeader .logo-title-section .title-username .titlesection .button{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.pen .penHeader .logo-title-section .title-username .titlesection .button .edit{
+    margin-top: 0.2rem;
+}
+
+.pen .penHeader .logo-title-section .title-username .titlesection .button .tick{
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.pen .penHeader .logo-title-section .title-username .username p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color : rgb(155, 157, 173);
+}
+
+.pen .penHeader .buttons-Section .buttons{
+    display: flex;
+    column-gap: 0.7rem;
+}
+.pen .penHeader .buttons-Section .buttons button{
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90px;
+}
+
+.pen .penHeader .buttons-Section .buttons .saveCode button{
+    color: white;
+    background-color: hsl( 227.37deg 12.26% 30.39% );
+}
+
+.pen .penHeader .buttons-Section .buttons .saveCode button:hover{
+    background-color: hsl( 228deg 12.2% 40.2% );
+}
+
+.pen .penHeader .buttons-Section .buttons .signup button{
+    font-weight: 400;
+    background-color: hsl(139.41deg 58.62% 54.51%);
+    color: black;
+}
+
+.pen .penHeader .buttons-Section .buttons .signup button:hover{
+    background-color: hsl(139.62deg 59.09% 34.51%);
+    color: white;
+}
+
+.pen .penHeader .buttons-Section .buttons .login button{
+    color: white;
+    background-color: hsl( 227.37deg 12.26% 30.39% );
+}
+
+.pen .penHeader .buttons-Section .buttons .login button:hover{
+    background-color: hsl( 228deg 12.2% 40.2% );
+}
+
+.pen .penHeader .buttons-Section .afterlogin{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+
+.pen .penHeader .buttons-Section .afterlogin .saveCode button{
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90px;
+}
+
+.pen .penHeader .buttons-Section .afterlogin .saveCode button{
+    color: white;
+    background-color: hsl( 227.37deg 12.26% 30.39% );
+}
+
+.pen .penHeader .buttons-Section .afterlogin .saveCode button:hover{
+    background-color: hsl( 228deg 12.2% 40.2% );
+}
+
+
+.pen .penHeader .buttons-Section .afterlogin .userImage{
+    width: 2.875rem;
+    height: 2.7rem;
+    border-radius: 4px ;
+    overflow: hidden;
+}
+
+.pen .penHeader .buttons-Section .afterlogin .userImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.pen .penHeader .buttons-Section .afterlogin .userImage .alternate{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: RGB(16, 185, 129);
+    color: white;
+}
+
+.pen .penHeader .buttons-Section .afterlogin .userImage .alternate p{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+
+.pen .penHeader .buttons-Section .afterlogin .signoutdropdown .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.875rem;
+    height: 2.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: hsl(223.64deg 12.94% 16.67%);
+    color: hsl(228.39deg 12.25% 50.39%);
+}
+
+.pen .penHeader .buttons-Section .afterlogin .signoutdropdown .logoutdropdown{
+    position: absolute;
+    top: 100%;
+    right: 0.5rem;
+    width: 180px;
+    background-color: hsl(223.64deg 12.94% 16.67%);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    box-shadow: 0 5px 20px hsl(0deg 0% 0%);
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.pen .penHeader .buttons-Section .afterlogin .signoutdropdown .logoutdropdown p{
+    border-bottom: 1px solid rgb(170, 174, 188);
+    padding: 1rem 0 1rem 0.5rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.pen .penHeader .buttons-Section .afterlogin .signoutdropdown .logoutdropdown button{
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pen  .editor-output{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 65px);
+}
+
+.pen  .editor-output .editorBox{
+    display: flex;
+    background-color: black;
+    padding-left: 1.5rem ;
+    column-gap: 1rem;
+    height: 350px;
+}
+
+.pen  .editor-output .editorBox .logosvg{
+    height: 17px;
+    width: 17px;
+}
+
+.pen  .editor-output .editorBox .commonBox{
+    width: 33.3333333333%;
+    height: 95%;
+    border: 1px solid #444857;
+    
+}
+
+.pen  .editor-output .editorBox .commonBox .commonHeader{
+    background-color: black;
+    color: white;
+}
+
+.pen  .editor-output .editorBox .commonBox .commonHeader .boxtitle{
+    display: flex;
+    padding: 9px 12px;
+    border-top: 3px solid hsla(230, 4%, 29%, 0.616);
+    color: hsl( 226.67deg 11.84% 70.2% );
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 105px;
+    background-color: rgb(29,30,34);
+}
+
+.pen  .editor-output .editorBox .commonBox .commonHeader .boxtitle p{
+    margin-top: -4px;
+}
+
+.pen  .editor-output .editorBox .commonBox .codemirror{
+    background-color: rgb(29,30,34);
+    width: 100%;
+    height: calc(100% - 42px);
+    /* ::-webkit-scrollbar{
+        display: none;
+    } */
+}
+
+
+.pen  .editor-output .editorBox .commonBox .css-header .boxtitle{
+    width: 80px;
+}
+
+.pen  .editor-output .editorBox .commonBox .js-header .boxtitle{
+    width: 70px;
+}
+
+.pen  .editor-output .output{
+    width: 100%;
+    height: 323.6px;
+    background-color: white;
+    
+   
+}
+
+
+
+/* .CodeMirror {
+    height: 340px !important;
+    color: #fff;
+    z-index: 100;
+  } */
+  /* .CodeMirror-gutters {
+    background: #1d1e22 !important;
+  }
+  .CodeMirror-scroll {
+    background: #1d1e22;
+  }
+  
+  .CodeMirror {
+    padding-top: 0 !important;
+  } */
+  
+  .CodeMirror-wrap pre {
+    word-break: break-word;
+  }
+
+  
+  .ͼo {
+    background: #131417 !important;
+  }
+
+  @media (max-width :900px) {
+    .pen  .editor-output .editorBox{
+        padding-left: 0;
+        column-gap: 0.5rem;
+    }
+  }
+
+  @media (max-width :700px) {
+
+    .pen  .editor-output{
+        flex-direction: row;
+        height: auto;
+        overflow: hidden;
+
+    }
+    .pen  .editor-output .editorBox{
+        width: 50%;
+        flex-direction: column;
+        row-gap: 1rem;
+        height: 100%; 
+    }
+
+    .pen  .editor-output .editorBox .commonBox{
+        width: 100%;
+    }
+
+    
+
+    .pen  .editor-output .output{
+        width: 50%;
+        height: auto;
+    }
+  }
+
+
+   @media (max-width : 550px) {
+    .pen .penHeader{
+        padding: 0.2rem 0.5rem;
+    }
+    .pen .penHeader .buttons-Section .buttons button{
+        padding: 0.5rem 0.2rem;
+        width: 55px;
+        font-size: 0.8rem;
+    }
+
+    .pen .penHeader .logo-title-section .title-username .titlesection .title input{
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+
+    .pen .penHeader .logo-title-section .title-username .titlesection .title p{
+        font-size: 1rem;
+    }
+    
+   
+    
+    .pen .penHeader .logo-title-section .title-username .titlesection .button{
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    
+    .pen .penHeader .logo-title-section .title-username .titlesection .button .edit{
+        margin-top: 0.2rem;
+    }
+    
+    .pen .penHeader .logo-title-section .title-username .titlesection .button .tick{
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+    
+    .pen .penHeader .logo-title-section .title-username .username p{
+        font-size: 0.7rem;
+    }
+
+    .pen .penHeader .logo-title-section .logo svg{
+        height: 25px;
+    }
+
+    .pen .penHeader .buttons-Section .afterlogin .saveCode button{
+        padding: 0.5rem 0.2rem;
+        width: 55px;
+        font-size: 0.8rem;
+    }
+
+    .pen .penHeader .buttons-Section .afterlogin .signoutdropdown .icon{
+        width: 2rem;
+        height: 1.8rem;
+    }
+
+    .pen .penHeader .buttons-Section .afterlogin .userImage{
+        width: 2rem;
+        height: 1.8rem;
+    }
+  } 
+    
