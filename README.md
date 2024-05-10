@@ -33,14 +33,14 @@ Clean Up Default Files: Delete the default files (App.css, App.test.js, logo.svg
 
 ## Project Structure
 - src
-components: This directory will contain React components.
-App.js: The main component where the layout and structure of the CodePen clone will be defined.
-index.js: Entry point of the application.
-Features to Implement
-Code Editor Panels: Create separate panels for HTML, CSS, and JavaScript code editing.
-Live Output: Display the live output of the code as the user types.
-Save and Share: Allow users to save their code snippets and share them with others.
-User Authentication: Implement user authentication to enable features like saving pens.
+ - components: This directory will contain React components.
+ - App.js: The main component where the layout and structure of the CodePen clone will be defined.
+ - index.js: Entry point of the application.
+- Features to Implement
+ - Code Editor Panels: Create separate panels for HTML, CSS, and JavaScript code editing.
+ - Live Output: Display the live output of the code as the user types.
+ - Save and Share: Allow users to save their code snippets and share them with others.
+ - User Authentication: Implement user authentication to enable features like saving pens.
 
 ## Resources
 React Documentation
